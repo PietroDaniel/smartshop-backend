@@ -1,9 +1,12 @@
+package com.smartshop.smartshop_backend.model;
+
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+@Entity
 public class Produto {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -11,6 +14,7 @@ public class Produto {
     private Double preco;
     private Integer quantidade;
 
+    // Getters and Setters
     public Long getId() {
         return id;
     }
